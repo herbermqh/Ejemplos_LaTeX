@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[svgnames]{xcolor}
+\usepackage{lipsum,tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,hooks}
+\makeatletter
+\newdimen\tmp@length
+\newtcolorbox{mybox}{%
+  enhanced,
+  width=\textwidth,
+  colframe=Salmon,
+  colback=white,
+  frame code app={
+    \fill[rounded corners,Salmon] ([yshift=-.5cm]frame.north west)rectangle([yshift=32pt]frame.north east);
+    \tmp@length=0.25\textwidth\relax%
+    \@whiledim\tmp@length<\textwidth\do{%
+      \coordinate (a) at ([xshift=\tmp@length, yshift=15pt]frame.north west);
+      \foreach \x in {-11,-7,...,11}{%
+        \fill ([xshift=\x mm]a) circle (2.5pt);
+        \node[
+          inner sep=0pt, outer sep=0pt, 
+          minimum height=1cm, minimum width=3.5pt,
+          bottom color=black!70!white, top color=black!20!white,
+          anchor=south, rounded corners=0.5pt
+        ] at ([xshift=\x mm]a) {};
+      }
+      \advance\tmp@length by 0.25\textwidth\relax%
+    }
+  }
+}
+\makeatother
+\begin{document}
+\begin{mybox}
+  \lipsum[1]
+\end{mybox}
+\end{document}
