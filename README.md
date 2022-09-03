@@ -1,2 +1,2 @@
-# Ejemplos_LaTeX
-Ejemplos de LaTeX
+# Ejemplos \LaTeX
+Ejemplos de \LaTeX
