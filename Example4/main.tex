@@ -1,0 +1,162 @@
+\documentclass[12pt,legalpaper]{report}
+\usepackage[paperheight=13.8in, paperwidth=8.5in]{geometry} %definir las margenes 
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{pstricks-add}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{amssymb,array}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{rotating}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{multicol}
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{setspace}
+\usepackage{pstricks,pstricks-add,pst-math,pst-xkey}
+%\usepackage{enumitem} % para continuar numeración \begin{enumerate}[resume]
+
+\newcommand{\degre}{\ensuremath{^\circ}}
+
+
+\parindent=0pt
+\setlength{\columnsep}{1.2cm} \hoffset-2cm \voffset-1.5cm
+\setlength{\textheight}{32.5cm} \setlength{\textwidth}{18cm}
+\pagestyle{empty}
+
+%============================================================
+\setlength{\evensidemargin}{1mm}
+\setlength{\oddsidemargin}{1mm} \setlength\hoffset{-10mm}
+\setlength{\headsep}{0mm}
+\setlength{\topmargin}{-5mm}
+
+\begin{document}
+
+\begin{enumerate}
+%\item Dada la siguiente tabla.
+%\begin{table}[htb]
+%\centering
+%\begin{tabular}{|l|l|}
+%\hline
+%{\color{red}Salario diario \$} & {\color{red}N° de obreros}\\ \hline
+%0-3.0  & 10\\ \hline
+%3.0-4.0  & 16\\ \hline
+%4.0-5.0  & 35\\ \hline
+%5.0-6.0  & 26\\ \hline
+%6.0-7.0  & 13\\ \hline
+%\end{tabular}
+%\end{table}
+
+%\begin{enumerate}
+%\item[a)] ¿Cuál es el salario máximo que ganan diariamente el 30\% de obreros con sueldos más bajos?.
+%\item[b)] ¿Qué \% de obreros ganan mas de \$5.500?
+%\end{enumerate}
+
+\item Una compañía fabrica tres tipos de cajas de cartón: pequeñas, medianas y grandes. El costo para elaborar una caja pequeña es de \$2.50, para la mediana es de \$4.00 y \$4.50 para la caja grande. Los costos fijos son de \$8000.
+\begin{enumerate}
+  \item[a)] Exprese el costo de elaborar $x$ cajas pequeñas, $y$ cajas medianas y $z$ cajas grandes como una función de tres
+    variables: $C=f(x, y, z)$.
+  \item[{\color{blue}b)}] Encuentre $f (3000, 5000, 4000)$ e interprételo.
+  \item[c)] ¿Cuál es el dominio de $f$?.
+\end{enumerate}
+
+\item Consideremos la función $f(x,y)=1+\sqrt{x-y-1}$
+\begin{enumerate}
+  \item[{\color{blue}a)}] Evalúe $f(3,1)$, $f(4,2)$ y $f(1,0)$.
+  
+    \textbf{Solución: }
+    \begin{align*}
+      f(3,1) &= 1+\sqrt{3-1-1} = 1+\sqrt{1} = 2\\
+      f(4,2) &= 1+\sqrt{4-2-1} = 1+\sqrt{1} = 2\\
+      f(1,0) &= 1+\sqrt{1-0-1} = 1+\sqrt{0} = 1
+    \end{align*}
+  \item[b)] Encuentre el dominio y rango de $f$.
+\end{enumerate}
+
+
+
+\item Determinar  y representar el dominio de las siguientes funciones.
+\begin{enumerate}
+  \item[{\color{blue}a)}] $f(x,y)=\frac{\sqrt{y-x^{2}}}{1-x^{2}}$.
+  \item[b)] $f(x,y)=\sqrt{9-x^{2}-9y^{2}}$.
+  \item[{\color{blue}c)}] $f(x,y)=\sqrt{9-x^{2}-y^{2}}-
+      \text{In}(x^{2}+y^{2}-4)$.
+  \item[d)] $f(x,y)= \text{arcsin}\left(\frac{x}{x+y}\right)$.
+  \item[{\color{blue}e)}] $f(x,y)=\sqrt{1-x^{2}}-\sqrt{1-y^{2}}$.
+\end{enumerate}
+\textbf{Solución: }\par
+\begin{enumerate}
+  \item 
+    \begin{align*}
+      c^2 &= a^2 + b^2
+    \end{align*}
+\end{enumerate}
+
+\item Calcule los siguientes límites en caso de que existan; de lo contrario, demostrar que no existen.
+\begin{enumerate}
+  \item[{\color{blue}a)}] $\lim\limits_{(x,y)\to (0,0)}\frac{3xy^3}{2y^6+x^2}$, \quad \quad {\color{blue}b)} $\lim\limits_{(x,y)\to (0,0)}\frac{x^3-y^3}{x^2+y^2}$, \quad \quad c) $\lim\limits_{(x,y)\to (0,0)}\frac{x^3+y^3}{x^2-y^2}$,
+  \item[{\color{blue}d)}] $\lim\limits_{(x,y)\to (0,0)}\frac{(x+y)^2}{x^2+y^2}$, \quad \quad e) $\lim\limits_{(x,y)\to (0,0)}\frac{x^4+y^4}{|x|+|y|}$, \quad \quad f) $\lim\limits_{(x,y)\to (0,0)}\frac{\text{cos}(x-y)}{x-y}$.
+\end{enumerate}
+
+\textbf{Solución:} a) No existe, b) Existe, c) No existe, d) No existe, e) Existe, f) No existe.
+
+
+\item Estudie la continuidad de las siguientes funciones en el punto $(0,0)$.
+\begin{enumerate}
+  \item[{\color{blue}a)}] Sea
+    \begin{equation*}
+      f(x,y)= \left\{ \begin{array}{lcc}
+        \frac{2xy^{2}}{x^{2}+8y^{4}} & \text{si} & (x,y) \neq (0,0) \\
+        0                            & \text{si} & (x,y)=(0,0).
+      \end{array}
+      \right.
+    \end{equation*}
+
+  \item[b)] Sea
+    \begin{equation*}
+      f(x,y)= \left\{ \begin{array}{lcc}
+        \frac{xy}{|x|+|y|} & \text{si} & (x,y) \neq (0,0) \\
+        0                  & \text{si} & (x,y)=(0,0).
+      \end{array}
+      \right.
+    \end{equation*}
+
+
+  \item[{\color{blue}c)}] Sea
+    \begin{equation*}
+      f(x,y)= \left\{ \begin{array}{lcc}
+        \frac{xy}{x^{2}+xy+y^{2}} & \text{si} & (x,y) \neq (0,0) \\
+        0                         & \text{si} & (x,y)=(0,0).
+      \end{array}
+      \right.
+    \end{equation*}
+\end{enumerate}
+
+\item Consideremos la función $f(x,y)=x^{4}y^{3}+8x^{2}y+4y$.
+\begin{enumerate}
+  \item[a)] Calcule $f_{x}(x,y)$, $f_{y}(x,y)$, $f_{xy}(x,y)$, $f_{xx}(x,y)$ y $f_{yy}(x,y)$.
+  \item[{\color{blue}b)}] Evalúe $f_{x}(1,2)$ y $f_{xy}(3,0)$.
+\end{enumerate}
+
+\item Sea
+\begin{equation*}
+  f(x,y)= \left\{ \begin{array}{lcc}
+    \frac{xy}{x^{2}+y^{2}} & \text{si} & (x,y) \neq (0,0) \\
+    0                      & \text{si} & (x,y)=(0,0).
+  \end{array}
+  \right.
+\end{equation*}
+\end{enumerate}
+\end{document}
